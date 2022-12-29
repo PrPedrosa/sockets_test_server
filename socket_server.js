@@ -2,7 +2,7 @@
 const app = require("./app")
 const http = require("http");
 const httpServer = http.createServer(app);
-httpServer.listen(9090, ()=> console.log("socket listening on port 9090"));
+httpServer.listen(80, ()=> console.log("socket listening on port 80"));
 
 const webSocketServer = require("websocket").server;
 
