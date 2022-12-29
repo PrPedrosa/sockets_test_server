@@ -7,7 +7,7 @@ httpServer.listen(9090, ()=> console.log("socket listening on port 9090"));
 const webSocketServer = require("websocket").server;
 
 const wsServer = new webSocketServer({
-    httpServer
+    "httpServer": httpServer
 })
 
 //get random ids
