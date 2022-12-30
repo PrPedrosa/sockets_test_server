@@ -2,12 +2,12 @@
 const app = require("./app")
 const http = require("http");
 const httpServer = http.createServer(app);
-httpServer.listen(80, ()=> console.log("socket listening on port 80"));
+httpServer.listen(8080, ()=> console.log("socket listening on port 8080"));
 
 const webSocketServer = require("websocket").server;
 
 const wsServer = new webSocketServer({
-    "httpServer": httpServer
+    httpServer
 })
 
 //get random ids
